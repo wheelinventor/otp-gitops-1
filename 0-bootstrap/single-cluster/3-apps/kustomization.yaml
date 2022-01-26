@@ -47,12 +47,12 @@ resources:
  ## An example has been provided
  #- argocd/cloudpaks/cp4i/cp4i.yaml
  
-  - argocd/sync-wave-demo/sync-wave-demo-0.yaml
-  - argocd/sync-wave-demo/sync-wave-demo-1.yaml
+  # - argocd/sync-wave-demo/sync-wave-demo-0.yaml
+  # - argocd/sync-wave-demo/sync-wave-demo-1.yaml
 
-## Sync Wave Dev purposes only.
-  - argocd/sync-wave-dev/first-app.yaml
-  - argocd/sync-wave-dev/second-app.yaml
+# ## Sync Wave Dev purposes only.
+#   - argocd/sync-wave-dev/first-app.yaml
+#   - argocd/sync-wave-dev/second-app.yaml
   
 patches:
 - target:
