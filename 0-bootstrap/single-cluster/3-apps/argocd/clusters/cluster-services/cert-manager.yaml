@@ -1,9 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-cloudpak-cp4i
+  name: apps-cluster-services-cert-manager
   annotations:
-    argocd.argoproj.io/sync-wave: "400"
+    argocd.argoproj.io/sync-wave: "410"
   labels:
     gitops.tier.layer: applications
   finalizers:
@@ -14,10 +14,8 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source:
-    path: tenants/cloudpaks/cp4i
+    path: clusters/cluster-services/cert-manager/acm/
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true
-    syncOptions:
-          - CreateNamespace=true
+      selfHeal: true 
