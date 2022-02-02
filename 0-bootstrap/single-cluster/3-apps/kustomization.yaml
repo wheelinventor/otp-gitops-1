@@ -61,6 +61,9 @@ resources:
   # - argocd/sync-wave-demo/sync-wave-demo-0.yaml
   # - argocd/sync-wave-demo/sync-wave-demo-1.yaml
 
+ ## Bank app and configuration
+  - argocd/bank-app/rhsso-integration-bank-app.yaml
+
 patches:
 - target:
     group: argoproj.io
