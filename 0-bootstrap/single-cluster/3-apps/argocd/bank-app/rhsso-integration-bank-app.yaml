@@ -5,8 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "490"
   labels:
-    gitops.tier.group: cntk
-    gitops.tier.layer: services
+    gitops.tier.layer: applications
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
