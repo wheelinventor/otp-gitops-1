@@ -62,7 +62,13 @@ resources:
   # - argocd/sync-wave-demo/sync-wave-demo-1.yaml
 
  ## Bank app and configuration
+ ##  Requires external secret access and a database
+ ##  Deploys to clusters labeled environment=dev2 (for now)
   - argocd/bank-app/rhsso-integration-bank-app.yaml
+  - argocd/bank-app/mobile-simulator.yaml
+  - argocd/bank-app/transaction-service.yaml
+  - argocd/bank-app/user-service.yaml
+  - argocd/bank-app/bank-knative-service.yaml
 
 patches:
 - target:
