@@ -12,7 +12,7 @@ spec:
   destination:
     namespace: sso-integration
     server: https://kubernetes.default.svc
-  project: services
+  project: applications
   source:
     path: instances/rhsso-integration-bank-app
   syncPolicy:
