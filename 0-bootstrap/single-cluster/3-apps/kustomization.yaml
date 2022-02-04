@@ -51,7 +51,7 @@ resources:
   - argocd/clusters/cluster-services/external-secrets.yaml
 # - argocd/clusters/cluster-services/vault.yaml
   - argocd/clusters/cluster-services/cloudwatch.yaml
-
+  - argocd/clusters/cluster-services/openshift-serverless.yaml
 
  ## Deploy Applications to Managed Clusters
  ## Include the Applications you wish to deploy below
