@@ -415,3 +415,10 @@ rules:
       - 'certificates'
       - 'issuers'
       - 'clusterissuers'
+  - verbs:
+    - '*'
+    apiGroups:
+      - hive.openshift.io
+    resources: 
+      - 'selectorsyncsets'
+
