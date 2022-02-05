@@ -16,8 +16,8 @@ resources:
  #- argocd/instances/cert-manager-instance.yaml
  
  # Certificate Management
-# - argocd/operators/cert-manager.yam
-# - argocd/instances/cert-manager.yaml
+ - argocd/operators/cert-manager.yam
+ - argocd/instances/cert-manager-instance.yaml
 
  # Sealed Secrets
  - argocd/instances/sealed-secrets.yaml
