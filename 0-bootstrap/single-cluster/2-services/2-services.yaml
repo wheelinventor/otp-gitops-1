@@ -85,6 +85,8 @@ spec:
   - group: ""
     kind: secrets
   - group: ""
+    kind: Namespace
+  - group: ""
     kind: serviceaccounts
   - group: "batch"
     kind: jobs
@@ -106,6 +108,16 @@ spec:
     kind: objectbucketclaims
   - group: "automationcontroller.ansible.com" 
     kind: automationcontrollers
+  - group: "admissionregistration.k8s.io"   #added for cert-manager
+    kind: MutatingWebhookConfiguration
+  - group: "admissionregistration.k8s.io"   #added for cert-manager
+    kind: ValidatingWebhookConfiguration
+  - group: "cert-manager.io"
+    kind: ClusterIssuer
+  - group: "cert-manager.io"
+    kind: Issuer 
+  - group: "cert-manager.io"
+    kind: Certificate 
   roles:
   # A role which provides read-only access to all applications in the project
   - name: read-only
