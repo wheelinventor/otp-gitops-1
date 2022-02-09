@@ -52,7 +52,8 @@ resources:
   - argocd/clusters/cluster-services/vault.yaml
   - argocd/clusters/cluster-services/cloudwatch.yaml
   - argocd/clusters/cluster-services/openshift-serverless.yaml
-
+  - argocd/clusters/cluster-services/knative-serving.yaml
+  
  ## Deploy Applications to Managed Clusters
  ## Include the Applications you wish to deploy below
  ## An example has been provided
