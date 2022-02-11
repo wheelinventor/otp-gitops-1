@@ -17,12 +17,14 @@ spec:
     path: clusters/submariner/configure-azure/
     helm:
       values: |
-        clustersList: 
+        azureClustersList: 
         - azure-cluster-03
         - azure-cluster-06
         - azure-cluster-07
         - azure-cluster-08
+        - cdb-azure-1 
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+# PUT new azure cluster list here
