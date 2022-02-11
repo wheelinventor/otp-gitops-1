@@ -21,9 +21,6 @@ spec:
         - aws-cluster-shared-0
         - aws-cluster-shared-1
         - aws-cluster-shared-2
-        - azure-cluster-03
-        - azure-cluster-06
-        - azure-cluster-07
         - azure-cluster-08
         - cdb-azure-3
         - cdb-azure-1
