@@ -1,7 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-cluster-deploy-cockroachdb
+  name: apps-label-managed-clusters-for-cockroachdb
+  annotations:
+    argocd.argoproj.io/sync-wave: "XXX"  # TODO: Changeme
   labels:
     gitops.tier.layer: applications
   finalizers:
@@ -12,8 +14,13 @@ spec:
     server: https://kubernetes.default.svc
   project: applications
   source:
-    path: clusters/cockroachdb
+    path: clusters/cockroachdb/aws/label-clusters
+    helm:
+      values: |
+        clustersList: 
+        - aws-cluster-X
+        - aws-cluster-Y
   syncPolicy:
     automated:
       prune: true
-      selfHeal: false
+      selfHeal: true
