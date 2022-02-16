@@ -38,7 +38,8 @@ resources:
   - argocd/clusters/create/aws/aws-cluster-shared-2.yaml
   #- argocd/clusters/create/aws/aws-cluster-6.yaml
   - argocd/clusters/create/aws/aws-cluster-7.yaml
-
+  - argocd/clusters/cluster-services/cert-manager.yaml
+ #- argocd/clusters/cluster-services/external-secrets.yaml
  ## Create Instana Virtual Machines
  #- argocd/infra/virtual-machines/instana/instana-vm.yaml
   - argocd/clusters/submariner/configure-azure.yaml
